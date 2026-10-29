@@ -1,19 +1,20 @@
 # Demo script — Gemini price agent (~60s)
 
-**Persona:** Restaurant manager (Araujos) restocking produce  
+**Persona:** Manager at a small local restaurant (Araujos) restocking produce  
 **Setup:** 2–3 suppliers in demo DB with different day prices  
 **Rule:** Gemini suggests; human approves
 
-**Core idea:** Today the manager calls suppliers or opens each website for day prices, then places the order by hand. Gemini does the price check in real time while they build the cart, recommends better options, and places the order only after they approve.
+**Core idea:** For small local restaurants — not big chains with a buying team — the manager calls suppliers or opens each website for day prices, then places the order by hand. Gemini does the price check in real time while they build the cart, recommends better options, and places the order only after they approve.
 
 ---
 
 ### 0:00–0:10 — Hook
 
-> “Every restock, the manager calls suppliers or opens their websites to get today’s prices — then still has to build and send the order. Watch a Gemini agent do both in real time: check provider prices and put the order through.”
+> “Picture a small local kitchen before lunch. The manager isn’t cooking — they’re on hold with a supplier, then jumping between websites, chasing today’s prices so they can finally place the order. No buying team. Just them.”
+>
+> “What if Gemini did that hunt — and placed the order — while they stayed in one screen?”
 
-**Show:** Split beat if possible — phone / browser tabs vs. one order screen.  
-Then cut to the portal with a draft cart: *10 cajas aguacate, 5 habanero, 3 pimentón*.
+**Show:** Quick beat of phone / browser tabs → cut to one portal cart: *10 cajas aguacate, 5 habanero, 3 pimentón*.
 
 ---
 
@@ -69,7 +70,7 @@ Then cut to the portal with a draft cart: *10 cajas aguacate, 5 habanero, 3 pime
 
 ### What judges should feel
 
-1. The pain is **calls + websites** to get prices, then ordering by hand
-2. Gemini **checks prices and helps place the order** in the same flow
-3. A second pass happens **before submit**
+1. Scope is **small local restaurants**, not broad retail / big chains
+2. The pain is **calls + websites** to get prices, then ordering by hand
+3. Gemini **checks prices and helps place the order** in the same flow
 4. Better prices are **recommendations** — the manager stays the buyer
