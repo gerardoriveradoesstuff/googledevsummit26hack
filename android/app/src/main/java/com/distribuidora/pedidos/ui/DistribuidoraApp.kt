@@ -78,6 +78,7 @@ import androidx.core.content.ContextCompat
 import com.distribuidora.pedidos.R
 import com.distribuidora.pedidos.data.DistApi
 import com.distribuidora.pedidos.data.Pedido
+import com.distribuidora.pedidos.data.ServerConfig
 import com.distribuidora.pedidos.print.imprimirZpl
 import com.distribuidora.pedidos.print.paginasLabel
 import com.distribuidora.pedidos.update.ApkDownloader
@@ -111,6 +112,11 @@ fun DistribuidoraApp() {
     var listo by remember { mutableStateOf(false) }
     val scope = rememberCoroutineScope()
     var showPin by remember { mutableStateOf(false) }
+    var showServer by remember { mutableStateOf(false) }
+    var servidor by remember { mutableStateOf(ServerConfig.apiBase) }
+    var serverInput by remember { mutableStateOf("") }
+    var serverMsg by remember { mutableStateOf<String?>(null) }
+    var probando by remember { mutableStateOf(false) }
     var pin by remember { mutableStateOf("") }
     var updating by remember { mutableStateOf(false) }
     var updateHint by remember { mutableStateOf<String?>(null) }
@@ -135,7 +141,10 @@ fun DistribuidoraApp() {
         }
     }
 
-    LaunchedEffect(Unit) {
+    LaunchedEffect(servidor) {
+        // Server changed (or first run): treat the current orders as already seen, no notification burst.
+        listo = false
+        vistos.clear()
         while (true) {
             try {
                 val lista = DistApi.pedidos()
@@ -161,7 +170,8 @@ fun DistribuidoraApp() {
                 }
                 error = null
             } catch (e: Exception) {
-                error = e.message?.takeIf { it.isNotBlank() } ?: "No se pudo hablar con el servidor"
+                error = (e.message?.takeIf { it.isNotBlank() } ?: "No se pudo hablar con el servidor") +
+                    " (${ServerConfig.apiBase})"
             }
             delay(4_000)
         }
@@ -182,6 +192,20 @@ fun DistribuidoraApp() {
                 fontWeight = FontWeight.Bold,
                 modifier = Modifier.weight(1f).padding(start = 10.dp),
             )
+            IconButton(
+                onClick = {
+                    serverInput = ServerConfig.apiBase
+                    serverMsg = null
+                    showServer = true
+                },
+                modifier = Modifier.size(48.dp),
+            ) {
+                Icon(
+                    painterResource(R.drawable.ic_server),
+                    contentDescription = stringResource(R.string.server_cd),
+                    tint = Color.White,
+                )
+            }
             IconButton(
                 onClick = {
                     pin = ""
@@ -295,6 +319,68 @@ fun DistribuidoraApp() {
             }
         }
         }
+    }
+
+    if (showServer) {
+        val guardar = { url: String? ->
+            val saved = ServerConfig.save(context, url)
+            if (saved == null) {
+                serverMsg = context.getString(R.string.server_invalid)
+            } else {
+                servidor = saved
+                pedidos = emptyList()
+                elegido = null
+                error = null
+                showServer = false
+            }
+        }
+        AlertDialog(
+            onDismissRequest = { if (!probando) showServer = false },
+            title = { Text(stringResource(R.string.server_title)) },
+            text = {
+                Column {
+                    Text(stringResource(R.string.server_help, ServerConfig.buildDefault), fontSize = 13.sp, color = Tinta)
+                    OutlinedTextField(
+                        value = serverInput,
+                        onValueChange = { serverInput = it.trim(); serverMsg = null },
+                        label = { Text(stringResource(R.string.server_label)) },
+                        placeholder = { Text("https://laptop.tailnet.ts.net/api") },
+                        singleLine = true,
+                        keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Uri),
+                        modifier = Modifier.fillMaxWidth().padding(top = 8.dp),
+                    )
+                    if (probando) CircularProgressIndicator(color = Hoja, modifier = Modifier.padding(top = 8.dp).size(20.dp))
+                    serverMsg?.let { Text(it, fontSize = 13.sp, color = Tinta, modifier = Modifier.padding(top = 8.dp)) }
+                    Row(Modifier.padding(top = 4.dp)) {
+                        TextButton(
+                            onClick = {
+                                val base = ServerConfig.normalize(serverInput)
+                                if (base == null) {
+                                    serverMsg = context.getString(R.string.server_invalid)
+                                } else if (!probando) {
+                                    probando = true
+                                    serverMsg = null
+                                    scope.launch {
+                                        serverMsg = ServerConfig.probar(base).fold({ "$it — $base" }, { "Error: ${it.message ?: it.javaClass.simpleName}" })
+                                        probando = false
+                                    }
+                                }
+                            },
+                        ) { Text(stringResource(R.string.server_test)) }
+                        TextButton(onClick = { guardar(null) }) { Text(stringResource(R.string.server_reset)) }
+                    }
+                }
+            },
+            confirmButton = {
+                Button(
+                    onClick = { guardar(serverInput) },
+                    colors = ButtonDefaults.buttonColors(containerColor = Hoja),
+                ) { Text(stringResource(R.string.server_save)) }
+            },
+            dismissButton = {
+                TextButton(onClick = { showServer = false }) { Text(stringResource(R.string.update_cancel)) }
+            },
+        )
     }
 
     if (showPin) {

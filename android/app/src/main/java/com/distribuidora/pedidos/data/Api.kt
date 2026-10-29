@@ -6,8 +6,9 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import org.json.JSONObject
 
-/** Panel y pedidos en el servidor. La carpeta api/ es la raíz pública de la puerta. */
-const val API_ORIGIN = "https://demo.ouwap.com/api"
+/** Panel y pedidos en el servidor. La carpeta api/ es la raíz pública de la puerta.
+ *  La URL base se configura en la app (botón Servidor) — ver [ServerConfig]. */
+val API_ORIGIN: String get() = ServerConfig.apiBase
 
 data class LineaPedido(
     val nombre: String,

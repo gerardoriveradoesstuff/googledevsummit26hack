@@ -3,6 +3,7 @@ import { z } from 'zod';
 import type { Cuenta, DistribuidoraApi } from './api.js';
 import { addDays, isoDate, prettyDate, resolveDate } from './dates.js';
 import { clientSummary, labels, orderDetail, orderSummary, qty } from './format.js';
+import { PURCHASING_INSTRUCTIONS, registerPurchasingTools } from './purchasing.js';
 
 export const INSTRUCTIONS = `This server connects you to "Distribuidora de Productos", a small produce distributor in California that supplies restaurants (Araujos Mexican Grill and others in the Bay Area and Los Angeles).
 
@@ -48,7 +49,7 @@ async function guard(fn: () => Promise<ReturnType<typeof text>>) {
 export function createServer(api: DistribuidoraApi): McpServer {
   const server = new McpServer(
     { name: 'distribuidora-de-productos', title: 'Distribuidora de Productos', version: '0.1.0' },
-    { instructions: INSTRUCTIONS },
+    { instructions: INSTRUCTIONS + '\n' + PURCHASING_INSTRUCTIONS },
   );
 
   server.registerTool(
@@ -252,6 +253,8 @@ export function createServer(api: DistribuidoraApi): McpServer {
         return text(`Marked order #${order_number} for ${after.cliente} as processed.\n\n${orderDetail(after)}`);
       }),
   );
+
+  registerPurchasingTools(server);
 
   return server;
 }

@@ -48,6 +48,24 @@ if (write) {
   await call('mark_order_processed', { order_number: numero });
   await call('mark_order_processed', { order_number: numero });
 }
+// Scenario 1 purchasing tools (mirror of the Android AppFunctions; always mock data)
+await call('get_current_distributor', {});
+await call('get_order_history', { product: 'organic chicken' });
+const pc = await call('check_price_change', { product: 'organic chicken', quantity_lbs: 20 });
+if (!pc.includes('"flagged": true') || !pc.includes('+$90.00')) { console.log('!! expected flagged +$90 increase'); failures++; }
+await call('check_price_change', { product: 'meat', quantity_lbs: 30 });
+const cmp = await call('compare_distributors', { product: 'organic chicken', quantity_lbs: 20, deliver_by: 'tomorrow' });
+if (!cmp.includes('Fresh Field Organics at $150.00')) { console.log('!! expected Fresh Field cheapest at $150'); failures++; }
+if (write) {
+  const po = await call('place_order', { distributor_id: 'fresh-field', product: 'organic chicken', quantity_lbs: 20, delivery_date: 'tomorrow' });
+  const conf = /Order (ORD-\d+)/.exec(po)?.[1];
+  const hist = await call('get_order_history', {});
+  if (!conf || !hist.includes(conf)) { console.log('!! placed order missing from history'); failures++; }
+}
+const bad = await client.callTool({ name: 'place_order', arguments: { distributor_id: 'nope', product: 'chicken', quantity_lbs: 20 } });
+console.log(`\n===== place_order bad id → isError=${bad.isError} (expected true)`);
+if (!bad.isError) failures++;
+
 // Expected error path
 const r = await client.callTool({ name: 'get_order', arguments: { order_number: 999999 } });
 console.log(`\n===== get_order 999999 → isError=${r.isError} (expected true)`);

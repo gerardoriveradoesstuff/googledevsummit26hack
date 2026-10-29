@@ -11,6 +11,7 @@ import {
   UserIcon,
 } from '@heroicons/react/24/outline';
 import { codigoCaja, esHoy, fechaLocal, fechaMarca, horaCorta, svgCodigo128 } from '@/lib/labels';
+import { API_URL as PUERTA, PORTAL_URL } from '../config';
 
 type Linea = {
   nombre: string;
@@ -41,8 +42,6 @@ type Cuenta = {
   url: string;
 };
 
-const PUERTA = 'https://demo.ouwap.com/api';
-const PORTAL_URL = 'https://demo.ouwap.com/portal';
 
 function sugerirUsuario(nombre: string): string {
   const partes = nombre
