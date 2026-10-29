@@ -1,0 +1,31 @@
+---
+import Panel from '../components/Panel';
+import '../styles/global.css';
+import {
+  APP_DESCRIPTION,
+  APP_NAME_FULL,
+  APP_NAME_SHORT,
+  BRAND_THEME_COLOR,
+} from '../data/branding.mjs';
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content={BRAND_THEME_COLOR} />
+    <meta name="description" content={APP_DESCRIPTION} />
+    <title>{APP_NAME_FULL}</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <meta name="apple-mobile-web-app-title" content={APP_NAME_SHORT} />
+  </head>
+  <body>
+    <div id="app">
+      <Panel client:load />
+    </div>
+    <script>
+      import '@/pwa';
+    </script>
+  </body>
+</html>

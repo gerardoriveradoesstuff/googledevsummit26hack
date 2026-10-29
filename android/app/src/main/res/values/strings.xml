@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Distribuidora</string>
+    <string name="home_update_cd">Actualizar aplicación</string>
+    <string name="update_pin_title">Por favor introduzca contraseña</string>
+    <string name="update_pin_label">Contraseña</string>
+    <string name="update_pin_confirm">Continuar</string>
+    <string name="update_cancel">Cancelar</string>
+    <string name="update_working">Descargando…</string>
+    <string name="update_error_generic">No se pudo descargar. Inténtalo de nuevo.</string>
+    <string name="update_error_connect">No se pudo conectar al servidor. Revisa la red de la tableta.</string>
+    <string name="update_error_sources">Permite instalar apps de esta fuente en Ajustes y vuelve a pulsar actualizar.</string>
+</resources>

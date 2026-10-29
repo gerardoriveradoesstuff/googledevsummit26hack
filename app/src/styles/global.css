@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#app {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: #e7f3ea;
+  color: #14241a;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+:focus-visible {
+  outline: 3px solid #1f6b3a;
+  outline-offset: 2px;
+}
+
+@keyframes entra-derecha {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.entra-derecha {
+  animation: entra-derecha 280ms ease-out;
+}

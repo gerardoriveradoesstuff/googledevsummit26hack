@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.astro/
+api/config/db.php
+api/config/apk.php
+apk/*.apk
+android/.gradle/
+android/build/
+android/app/build/
+android/local.properties
+android/.idea/
+*.log
