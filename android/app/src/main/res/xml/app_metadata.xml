@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AppFunctionAppMetadata xmlns:appfn="http://schemas.android.com/apk/androidx.appfunctions"
+    appfn:instructions="Orderly helps the restaurant Araujos Mexican Grill reorder supplies (for example organic chicken) from food distributors.
+Operational Patterns:
+  - For any reorder, call 'checkPriceChange' before 'placeOrder'. If it returns flagged=true, tell the user the price rose (state the % and the $ difference vs the last order).
+  - Then call 'compareDistributors' and present cheaper options together with the current distributor; mention when an option is new or has no reviews.
+  - Use 'getOrderHistory' for past orders and prices, and 'getCurrentDistributor' for the default distributor.
+Constraints:
+  - Only call 'placeOrder' after the user explicitly confirms the distributor, quantity and total.
+  - Prices are quoted per 20 lb and scale linearly; quantities are in pounds. Orders must be organic unless the user says otherwise."
+    appfn:description="Orderly helps the restaurant Araujos Mexican Grill reorder supplies (for example organic chicken) from food distributors.
+Operational Patterns:
+  - For any reorder, call 'checkPriceChange' before 'placeOrder'. If it returns flagged=true, tell the user the price rose (state the % and the $ difference vs the last order).
+  - Then call 'compareDistributors' and present cheaper options together with the current distributor; mention when an option is new or has no reviews.
+  - Use 'getOrderHistory' for past orders and prices, and 'getCurrentDistributor' for the default distributor.
+Constraints:
+  - Only call 'placeOrder' after the user explicitly confirms the distributor, quantity and total.
+  - Prices are quoted per 20 lb and scale linearly; quantities are in pounds. Orders must be organic unless the user says otherwise."
+    appfn:displayDescription="@string/app_function_app_display_description" />

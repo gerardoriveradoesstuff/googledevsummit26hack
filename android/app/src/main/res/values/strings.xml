@@ -10,4 +10,6 @@
     <string name="update_error_generic">No se pudo descargar. Inténtalo de nuevo.</string>
     <string name="update_error_connect">No se pudo conectar al servidor. Revisa la red de la tableta.</string>
     <string name="update_error_sources">Permite instalar apps de esta fuente en Ajustes y vuelve a pulsar actualizar.</string>
+    <string name="app_function_app_description">Orderly helps restaurants reorder supplies from distributors, flags distributor price increases using order history, and compares nearby distributors before placing an order.</string>
+    <string name="app_function_app_display_description">Orderly: reorder supplies, catch price hikes and compare distributors</string>
 </resources>

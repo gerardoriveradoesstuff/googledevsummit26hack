@@ -1,6 +1,7 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.plugin.compose")
+    id("com.google.devtools.ksp")
 }
 
 android {
@@ -73,6 +74,13 @@ dependencies {
     implementation("androidx.compose.ui:ui-tooling-preview")
     implementation("androidx.compose.material3:material3")
     implementation("androidx.compose.animation:animation")
+    // Jetpack AppFunctions (expose app capabilities to Gemini / agents). Needs compileSdk >= 37.
+    implementation("androidx.appfunctions:appfunctions:1.0.0-beta01")
+    ksp("androidx.appfunctions:appfunctions-compiler:1.0.0-beta01")
     testImplementation("junit:junit:4.13.2")
     debugImplementation("androidx.compose.ui:ui-tooling")
 }
+
+// AppFunctions KSP option (as in the official ChatApp sample): aggregate all
+// @AppFunctionDeclaration functions into the generated service XML.
+ksp { arg("appfunctions:aggregateAppFunctions", "true") }
