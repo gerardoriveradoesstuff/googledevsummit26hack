@@ -41,7 +41,8 @@ Restaurant tablet  --HTTP message (no SQL)-->  API gateway ("puerta")
 | `app/` | Astro + React PWA control panel (accounts, inbox, detail, label preview) |
 | `android/` | Distributor Android app (notifications, detail, Bluetooth ZPL print) |
 | `apk/` | Built APK copy for install / server upload |
-| `database/` | MySQL schema and helper SQL |
+| `database/` | MySQL schema, demo seed (`seed.sql`) and helper SQL |
+| `mcp/` | Remote MCP server (Node/TypeScript) so the Gemini app can read and create orders through the API. See [mcp/README.md](mcp/README.md) |
 | `01-descubrimiento/` | Discovery notes (diagnosis, scope, meeting script) |
 | `insumos/planes/` | Demo plan and flow details |
 
@@ -55,6 +56,7 @@ Restaurant tablet  --HTTP message (no SQL)-->  API gateway ("puerta")
 
 1. Start MySQL in XAMPP.
 2. Apply `database/schema.sql` to a database named `distribuidora`.
+   Optional, for a full demo inbox: apply `database/seed.sql` afterwards (see [Demo data](#demo-data)).
 3. Copy `api/config/db.sample.php` to `api/config/db.php` and set credentials.
 4. Run the API:
 
@@ -74,6 +76,25 @@ Restaurant tablet  --HTTP message (no SQL)-->  API gateway ("puerta")
    Open [http://localhost:4323](http://localhost:4323).
 
 6. Point the restaurant tablet at this machine's LAN IP on port `8084`. In the Android emulator, use `10.0.2.2`.
+
+## Demo data
+
+`database/seed.sql` fills the app with realistic data: 10 restaurant clients in the Bay Area and LA (Araujos Mexican Grill, Taquería La Palma, Mariscos El Güero, Pho Saigon Kitchen…) and about 55 produce orders. The orders cover the past three weeks through the next three days. Most past orders are processed. Today's orders are mixed. Future orders are new. Two past orders were **never processed** (the "missed WhatsApp" story).
+
+- Dates are **relative to today** (`CURDATE()` / `NOW()`, -07:00), so the inbox always looks current. Re-apply it the day you demo.
+- It is **idempotent**. It deletes only the 10 demo accounts (by `usuario`), their orders and their lines, children first for the foreign keys, then inserts them again. Accounts created by hand in the panel are kept. Order numbers restart at 1 when the tables are otherwise empty.
+- Apply it after `schema.sql`:
+
+  ```bash
+  mysql -u root distribuidora < database/seed.sql
+  # XAMPP (Windows): C:\xampp\mysql\bin\mysql.exe -u root distribuidora < database\seed.sql
+  # or phpMyAdmin → distribuidora → Import → seed.sql
+  ```
+
+- Demo logins follow the API format (`usuario` from the name, `contrasena` = digit + 2 letters). For example, Araujos Mexican Grill is `armegr` / `7KM`, and Taquería La Palma is `talapa` / `4RT`. The full list is in `database/generar_seed.py` and in the panel's accounts page.
+- To change the data, edit and run `python3 database/generar_seed.py`. It regenerates both `seed.sql` and `mcp/fixtures/seed-data.json`, which feeds the MCP server's mock mode.
+
+Addresses and phone numbers are made up for the demo.
 
 ## Demo flow (short)
 

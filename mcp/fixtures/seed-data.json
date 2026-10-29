@@ -1,0 +1,2379 @@
+{
+ "nota": "Generado por database/generar_seed.py. Mismos datos que database/seed.sql. Fechas como desplazamientos en días respecto a hoy (America/Los_Angeles).",
+ "clientes": [
+  {
+   "nombre": "Araujos Mexican Grill",
+   "direccion": "2125 Story Rd, San Jose, CA 95122",
+   "usuario": "armegr",
+   "contrasena": "7KM",
+   "direccion_extra": "Entrega por la puerta de cocina, atrás\nRecibe: Don Chuy"
+  },
+  {
+   "nombre": "Taquería La Palma",
+   "direccion": "2884 24th St, San Francisco, CA 94110",
+   "usuario": "talapa",
+   "contrasena": "4RT",
+   "direccion_extra": "Zona de carga en Bryant St antes de las 9 am"
+  },
+  {
+   "nombre": "Mariscos El Güero",
+   "direccion": "2427 E Cesar E Chavez Ave, Los Angeles, CA 90033",
+   "usuario": "maelgu",
+   "contrasena": "9HX",
+   "direccion_extra": "Llamar al llegar: (323) 555-0142"
+  },
+  {
+   "nombre": "Cocina Oaxaqueña Guelaguetza",
+   "direccion": "3014 W Olympic Blvd, Los Angeles, CA 90006",
+   "usuario": "cooagu",
+   "contrasena": "3PN",
+   "direccion_extra": "Bodega por el callejón"
+  },
+  {
+   "nombre": "Pupusería San Miguel",
+   "direccion": "2632 Middlefield Rd, Redwood City, CA 94063",
+   "usuario": "pusami",
+   "contrasena": "6WD",
+   "direccion_extra": ""
+  },
+  {
+   "nombre": "Tacos Los Primos",
+   "direccion": "1950 University Ave, East Palo Alto, CA 94303",
+   "usuario": "talopr",
+   "contrasena": "5BJ",
+   "direccion_extra": "Truck estacionado atrás del local después de las 11 am"
+  },
+  {
+   "nombre": "Pho Saigon Kitchen",
+   "direccion": "1688 Tully Rd, San Jose, CA 95122",
+   "usuario": "phsaki",
+   "contrasena": "8ZQ",
+   "direccion_extra": "Recibe: Mr. Tran"
+  },
+  {
+   "nombre": "Green Fork Café",
+   "direccion": "2190 Shattuck Ave, Berkeley, CA 94704",
+   "usuario": "grfoca",
+   "contrasena": "2LV",
+   "direccion_extra": "Factura a nombre de Green Fork LLC"
+  },
+  {
+   "nombre": "Sabor de Michoacán",
+   "direccion": "411 W 4th St, Santa Ana, CA 92701",
+   "usuario": "sademi",
+   "contrasena": "3YC",
+   "direccion_extra": ""
+  },
+  {
+   "nombre": "El Farolito Cocina",
+   "direccion": "4817 International Blvd, Oakland, CA 94601",
+   "usuario": "elfaco",
+   "contrasena": "7GF",
+   "direccion_extra": "Cerrado los lunes"
+  }
+ ],
+ "pedidos": [
+  {
+   "cliente": "armegr",
+   "fecha_offset": -21,
+   "recibido_dia": -22,
+   "recibido_hora": "17:34:00",
+   "cerrado_por": "Marco",
+   "procesado": true,
+   "procesado_hora": "05:50:00",
+   "lineas": [
+    {
+     "nombre": "Serrano",
+     "unidad": "lb",
+     "cantidad": 7.5
+    },
+    {
+     "nombre": "Rábano",
+     "unidad": "lb",
+     "cantidad": 5.5
+    },
+    {
+     "nombre": "Cebolla blanca",
+     "unidad": "caja",
+     "cantidad": 4.5
+    },
+    {
+     "nombre": "Aguacate",
+     "unidad": "caja",
+     "cantidad": 5.0
+    },
+    {
+     "nombre": "Lechuga romana",
+     "unidad": "caja",
+     "cantidad": 1.0
+    },
+    {
+     "nombre": "Tomatillo",
+     "unidad": "lb",
+     "cantidad": 15.0
+    },
+    {
+     "nombre": "Limón",
+     "unidad": "caja",
+     "cantidad": 1.5
+    },
+    {
+     "nombre": "Jalapeño",
+     "unidad": "lb",
+     "cantidad": 7.5
+    }
+   ]
+  },
+  {
+   "cliente": "armegr",
+   "fecha_offset": -20,
+   "recibido_dia": -20,
+   "recibido_hora": "08:44:00",
+   "cerrado_por": "Lupita",
+   "procesado": true,
+   "procesado_hora": "10:44:00",
+   "lineas": [
+    {
+     "nombre": "Limón",
+     "unidad": "caja",
+     "cantidad": 3.5
+    },
+    {
+     "nombre": "Papa",
+     "unidad": "kg",
+     "cantidad": 17.5
+    },
+    {
+     "nombre": "Tomatillo",
+     "unidad": "lb",
+     "cantidad": 12.5
+    },
+    {
+     "nombre": "Cilantro",
+     "unidad": "caja",
+     "cantidad": 0.5
+    },
+    {
+     "nombre": "Rábano",
+     "unidad": "lb",
+     "cantidad": 5.0
+    },
+    {
+     "nombre": "Tomate",
+     "unidad": "caja",
+     "cantidad": 6.5
+    },
+    {
+     "nombre": "Jalapeño",
+     "unidad": "lb",
+     "cantidad": 25.0
+    },
+    {
+     "nombre": "Serrano",
+     "unidad": "lb",
+     "cantidad": 5.5
+    }
+   ]
+  },
+  {
+   "cliente": "elfaco",
+   "fecha_offset": -19,
+   "recibido_dia": -20,
+   "recibido_hora": "20:41:00",
+   "cerrado_por": "Memo",
+   "procesado": true,
+   "procesado_hora": "07:10:00",
+   "lineas": [
+    {
+     "nombre": "Limón",
+     "unidad": "caja",
+     "cantidad": 4.5
+    },
+    {
+     "nombre": "Tomatillo",
+     "unidad": "lb",
+     "cantidad": 10.0
+    },
+    {
+     "nombre": "Cebolla blanca",
+     "unidad": "caja",
+     "cantidad": 1.5
+    },
+    {
+     "nombre": "Aguacate",
+     "unidad": "caja",
+     "cantidad": 5.0
+    },
+    {
+     "nombre": "Jalapeño",
+     "unidad": "lb",
+     "cantidad": 20.0
+    },
+    {
+     "nombre": "Tomate",
+     "unidad": "caja",
+     "cantidad": 3.0
+    },
+    {
+     "nombre": "Cilantro",
+     "unidad": "caja",
+     "cantidad": 2.0
+    },
+    {
+     "nombre": "Lechuga romana",
+     "unidad": "caja",
+     "cantidad": 1.0
+    }
+   ]
+  },
+  {
+   "cliente": "phsaki",
+   "fecha_offset": -19,
+   "recibido_dia": -20,
+   "recibido_hora": "20:55:00",
+   "cerrado_por": "Linh",
+   "procesado": true,
+   "procesado_hora": "06:10:00",
+   "lineas": [
+    {
+     "nombre": "Ajo",
+     "unidad": "lb",
+     "cantidad": 2.5
+    },
+    {
+     "nombre": "Cebolla blanca",
+     "unidad": "caja",
+     "cantidad": 3.0
+    },
+    {
+     "nombre": "Cilantro",
+     "unidad": "caja",
+     "cantidad": 3.0
+    },
+    {
+     "nombre": "Jalapeño",
+     "unidad": "lb",
+     "cantidad": 22.5
+    },
+    {
+     "nombre": "Limón",
+     "unidad": "caja",
+     "cantidad": 4.5
+    }
+   ]
+  },
+  {
+   "cliente": "cooagu",
+   "fecha_offset": -19,
+   "recibido_dia": -20,
+   "recibido_hora": "21:47:00",
+   "cerrado_por": "Bricia",
+   "procesado": true,
+   "procesado_hora": "06:50:00",
+   "lineas": [
+    {
+     "nombre": "Tomatillo",
+     "unidad": "lb",
+     "cantidad": 10.0
+    },
+    {
+     "nombre": "Chile pasilla",
+     "unidad": "lb",
+     "cantidad": 3.0
+    },
+    {
+     "nombre": "Repollo",
+     "unidad": "pieza",
+     "cantidad": 10.0
+    },
+    {
+     "nombre": "Aguacate",
+     "unidad": "caja",
+     "cantidad": 6.0
+    },
+    {
+     "nombre": "Cilantro",
+     "unidad": "caja",
+     "cantidad": 2.5
+    }
+   ]
+  },
+  {
+   "cliente": "maelgu",
+   "fecha_offset": -18,
+   "recibido_dia": -19,
+   "recibido_hora": "17:05:00",
+   "cerrado_por": "Güero",
+   "procesado": true,
+   "procesado_hora": "06:40:00",
+   "lineas": [
+    {
+     "nombre": "Tomate",
+     "unidad": "caja",
+     "cantidad": 6.0
+    },
+    {
+     "nombre": "Mango",
+     "unidad": "caja",
+     "cantidad": 1.0
+    },
+    {
+     "nombre": "Cilantro",
+     "unidad": "caja",
+     "cantidad": 2.0
+    },
+    {
+     "nombre": "Aguacate",
+     "unidad": "caja",
+     "cantidad": 2.0
+    },
+    {
+     "nombre": "Pepino",
+     "unidad": "caja",
+     "cantidad": 1.0
+    }
+   ]
+  },
+  {
+   "cliente": "pusami",
+   "fecha_offset": -18,
+   "recibido_dia": -19,
+   "recibido_hora": "18:55:00",
+   "cerrado_por": "Doña Marta",
+   "procesado": true,
+   "procesado_hora": "07:25:00",
+   "lineas": [
+    {
+     "nombre": "Repollo",
+     "unidad": "pieza",
+     "cantidad": 16.0
+    },
+    {
+     "nombre": "Ajo",
+     "unidad": "lb",
+     "cantidad": 2.5
+    },
+    {
+     "nombre": "Jalapeño",
+     "unidad": "lb",
+     "cantidad": 22.5
+    },
+    {
+     "nombre": "Pimentón",
+     "unidad": "caja",
+     "cantidad": 0.5
+    },
+    {
+     "nombre": "Zanahoria",
+     "unidad": "kg",
+     "cantidad": 5.5
+    }
+   ]
+  },
+  {
+   "cliente": "cooagu",
+   "fecha_offset": -18,
+   "recibido_dia": -19,
+   "recibido_hora": "21:12:00",
+   "cerrado_por": "Bricia",
+   "procesado": true,
+   "procesado_hora": "07:10:00",
+   "lineas": [
+    {
+     "nombre": "Aguacate",
+     "unidad": "caja",
+     "cantidad": 4.0
+    },
+    {
+     "nombre": "Cilantro",
+     "unidad": "caja",
+     "cantidad": 1.0
+    },
+    {
+     "nombre": "Chile pasilla",
+     "unidad": "lb",
+     "cantidad": 3.25
+    },
+    {
+     "nombre": "Cebolla blanca",
+     "unidad": "caja",
+     "cantidad": 5.0
+    },
+    {
+     "nombre": "Tomate",
+     "unidad": "caja",
+     "cantidad": 3.5
+    },
+    {
+     "nombre": "Ajo",
+     "unidad": "lb",
+     "cantidad": 4.0
+    },
+    {
+     "nombre": "Repollo",
+     "unidad": "pieza",
+     "cantidad": 13.0
+    }
+   ]
+  },
+  {
+   "cliente": "armegr",
+   "fecha_offset": -18,
+   "recibido_dia": -19,
+   "recibido_hora": "21:47:00",
+   "cerrado_por": "Chuy",
+   "procesado": true,
+   "procesado_hora": "07:40:00",
+   "lineas": [
+    {
+     "nombre": "Tomate",
+     "unidad": "caja",
+     "cantidad": 6.5
+    },
+    {
+     "nombre": "Serrano",
+     "unidad": "lb",
+     "cantidad": 8.0
+    },
+    {
+     "nombre": "Limón",
+     "unidad": "caja",
+     "cantidad": 4.5
+    },
+    {
+     "nombre": "Jalapeño",
+     "unidad": "lb",
+     "cantidad": 10.0
+    },
+    {
+     "nombre": "Cilantro",
+     "unidad": "caja",
+     "cantidad": 2.5
+    },
+    {
+     "nombre": "Papa",
+     "unidad": "kg",
+     "cantidad": 12.5
+    },
+    {
+     "nombre": "Tomatillo",
+     "unidad": "lb",
+     "cantidad": 12.5
+    },
+    {
+     "nombre": "Repollo",
+     "unidad": "pieza",
+     "cantidad": 13.0
+    }
+   ]
+  },
+  {
+   "cliente": "grfoca",
+   "fecha_offset": -18,
+   "recibido_dia": -19,
+   "recibido_hora": "21:55:00",
+   "cerrado_por": "Sam",
+   "procesado": true,
+   "procesado_hora": "07:25:00",
+   "lineas": [
+    {
+     "nombre": "Pepino",
+     "unidad": "caja",
+     "cantidad": 3.5
+    },
+    {
+     "nombre": "Espinaca",
+     "unidad": "caja",
+     "cantidad": 1.5
+    },
+    {
+     "nombre": "Cebolla morada",
+     "unidad": "caja",
+     "cantidad": 2.0
+    },
+    {
+     "nombre": "Calabacín",
+     "unidad": "caja",
+     "cantidad": 1.0
+    },
+    {
+     "nombre": "Limón",
+     "unidad": "caja",
+     "cantidad": 1.0
+    },
+    {
+     "nombre": "Lechuga romana",
+     "unidad": "caja",
+     "cantidad": 3.0
+    },
+    {
+     "nombre": "Tomate",
+     "unidad": "caja",
+     "cantidad": 3.0
+    },
+    {
+     "nombre": "Naranja",
+     "unidad": "caja",
+     "cantidad": 2.0
+    }
+   ]
+  },
+  {
+   "cliente": "phsaki",
+   "fecha_offset": -18,
+   "recibido_dia": -18,
+   "recibido_hora": "07:15:00",
+   "cerrado_por": "Linh",
+   "procesado": true,
+   "procesado_hora": "09:15:00",
+   "lineas": [
+    {
+     "nombre": "Cebolla blanca",
+     "unidad": "caja",
+     "cantidad": 2.0
+    },
+    {
+     "nombre": "Cilantro",
+     "unidad": "caja",
+     "cantidad": 1.5
+    },
+    {
+     "nombre": "Jalapeño",
+     "unidad": "lb",
+     "cantidad": 10.0
+    },
+    {
+     "nombre": "Germinado de soya",
+     "unidad": "lb",
+     "cantidad": 20.0
+    },
+    {
+     "nombre": "Cebollín",
+     "unidad": "caja",
+     "cantidad": 2.0
+    },
+    {
+     "nombre": "Albahaca tailandesa",
+     "unidad": "lb",
+     "cantidad": 2.75
+    }
+   ]
+  },
+  {
+   "cliente": "talopr",
+   "fecha_offset": -17,
+   "recibido_dia": -18,
+   "recibido_hora": "17:20:00",
+   "cerrado_por": "Primo Juan",
+   "procesado": true,
+   "procesado_hora": "06:25:00",
+   "lineas": [
+    {
+     "nombre": "Cilantro",
+     "unidad": "caja",
+     "cantidad": 3.0
+    },
+    {
+     "nombre": "Jalapeño",
+     "unidad": "lb",
+     "cantidad": 10.0
+    },
+    {
+     "nombre": "Pepino",
+     "unidad": "caja",
+     "cantidad": 3.5
+    },
+    {
+     "nombre": "Cebolla blanca",
+     "unidad": "caja",
+     "cantidad": 1.5
+    },
+    {
+     "nombre": "Tomate",
+     "unidad": "caja",
+     "cantidad": 6.0
+    },
+    {
+     "nombre": "Aguacate",
+     "unidad": "caja",
+     "cantidad": 7.0
+    }
+   ]
+  },
+  {
+   "cliente": "grfoca",
+   "fecha_offset": -17,
+   "recibido_dia": -17,
+   "recibido_hora": "07:03:00",
+   "cerrado_por": "Sam",
+   "procesado": true,
+   "procesado_hora": "09:03:00",
+   "lineas": [
+    {
+     "nombre": "Cebolla morada",
+     "unidad": "caja",
+     "cantidad": 1.5
+    },
+    {
+     "nombre": "Lechuga romana",
+     "unidad": "caja",
+     "cantidad": 1.0
+    },
+    {
+     "nombre": "Calabacín",
+     "unidad": "caja",
+     "cantidad": 0.5
+    },
+    {
+     "nombre": "Naranja",
+     "unidad": "caja",
+     "cantidad": 3.0
+    },
+    {
+     "nombre": "Espinaca",
+     "unidad": "caja",
+     "cantidad": 2.5
+    },
+    {
+     "nombre": "Limón",
+     "unidad": "caja",
+     "cantidad": 5.5
+    }
+   ]
+  },
+  {
+   "cliente": "armegr",
+   "fecha_offset": -16,
+   "recibido_dia": -17,
+   "recibido_hora": "20:05:00",
+   "cerrado_por": "Lupita",
+   "procesado": true,
+   "procesado_hora": "06:40:00",
+   "lineas": [
+    {
+     "nombre": "Rábano",
+     "unidad": "lb",
+     "cantidad": 5.0
+    },
+    {
+     "nombre": "Jalapeño",
+     "unidad": "lb",
+     "cantidad": 15.0
+    },
+    {
+     "nombre": "Serrano",
+     "unidad": "lb",
+     "cantidad": 4.5
+    },
+    {
+     "nombre": "Limón",
+     "unidad": "caja",
+     "cantidad": 1.0
+    }
+   ]
+  },
+  {
+   "cliente": "grfoca",
+   "fecha_offset": -16,
+   "recibido_dia": -16,
+   "recibido_hora": "07:15:00",
+   "cerrado_por": "Priya",
+   "procesado": true,
+   "procesado_hora": "09:15:00",
+   "lineas": [
+    {
+     "nombre": "Tomate",
+     "unidad": "caja",
+     "cantidad": 2.5
+    },
+    {
+     "nombre": "Lechuga romana",
+     "unidad": "caja",
+     "cantidad": 1.0
+    },
+    {
+     "nombre": "Limón",
+     "unidad": "caja",
+     "cantidad": 2.0
+    },
+    {
+     "nombre": "Calabacín",
+     "unidad": "caja",
+     "cantidad": 1.5
+    },
+    {
+     "nombre": "Espinaca",
+     "unidad": "caja",
+     "cantidad": 2.5
+    },
+    {
+     "nombre": "Cebolla morada",
+     "unidad": "caja",
+     "cantidad": 3.0
+    }
+   ]
+  },
+  {
+   "cliente": "maelgu",
+   "fecha_offset": -15,
+   "recibido_dia": -16,
+   "recibido_hora": "19:20:00",
+   "cerrado_por": "Güero",
+   "procesado": true,
+   "procesado_hora": "05:10:00",
+   "lineas": [
+    {
+     "nombre": "Serrano",
+     "unidad": "lb",
+     "cantidad": 2.0
+    },
+    {
+     "nombre": "Cebolla morada",
+     "unidad": "caja",
+     "cantidad": 0.5
+    },
+    {
+     "nombre": "Pepino",
+     "unidad": "caja",
+     "cantidad": 2.0
+    },
+    {
+     "nombre": "Aguacate",
+     "unidad": "caja",
+     "cantidad": 10.0
+    }
+   ]
+  },
+  {
+   "cliente": "elfaco",
+   "fecha_offset": -14,
+   "recibido_dia": -15,
+   "recibido_hora": "22:05:00",
+   "cerrado_por": "Alicia",
+   "procesado": true,
+   "procesado_hora": "05:25:00",
+   "lineas": [
+    {
+     "nombre": "Cilantro",
+     "unidad": "caja",
+     "cantidad": 3.0
+    },
+    {
+     "nombre": "Tomatillo",
+     "unidad": "lb",
+     "cantidad": 7.5
+    },
+    {
+     "nombre": "Tomate",
+     "unidad": "caja",
+     "cantidad": 2.5
+    },
+    {
+     "nombre": "Papa",
+     "unidad": "kg",
+     "cantidad": 15.0
+    },
+    {
+     "nombre": "Limón",
+     "unidad": "caja",
+     "cantidad": 3.5
+    },
+    {
+     "nombre": "Aguacate",
+     "unidad": "caja",
+     "cantidad": 10.0
+    },
+    {
+     "nombre": "Lechuga romana",
+     "unidad": "caja",
+     "cantidad": 3.0
+    }
+   ]
+  },
+  {
+   "cliente": "armegr",
+   "fecha_offset": -14,
+   "recibido_dia": -14,
+   "recibido_hora": "07:15:00",
+   "cerrado_por": "Lupita",
+   "procesado": true,
+   "procesado_hora": "09:15:00",
+   "lineas": [
+    {
+     "nombre": "Rábano",
+     "unidad": "lb",
+     "cantidad": 3.5
+    },
+    {
+     "nombre": "Aguacate",
+     "unidad": "caja",
+     "cantidad": 10.0
+    },
+    {
+     "nombre": "Tomatillo",
+     "unidad": "lb",
+     "cantidad": 20.0
+    },
+    {
+     "nombre": "Tomate",
+     "unidad": "caja",
+     "cantidad": 3.0
+    }
+   ]
+  },
+  {
+   "cliente": "phsaki",
+   "fecha_offset": -13,
+   "recibido_dia": -14,
+   "recibido_hora": "20:12:00",
+   "cerrado_por": "Linh",
+   "procesado": true,
+   "procesado_hora": "07:10:00",
+   "lineas": [
+    {
+     "nombre": "Albahaca tailandesa",
+     "unidad": "lb",
+     "cantidad": 1.0
+    },
+    {
+     "nombre": "Germinado de soya",
+     "unidad": "lb",
+     "cantidad": 17.5
+    },
+    {
+     "nombre": "Ajo",
+     "unidad": "lb",
+     "cantidad": 2.0
+    },
+    {
+     "nombre": "Jalapeño",
+     "unidad": "lb",
+     "cantidad": 15.0
+    },
+    {
+     "nombre": "Limón",
+     "unidad": "caja",
+     "cantidad": 3.0
+    },
+    {
+     "nombre": "Cilantro",
+     "unidad": "caja",
+     "cantidad": 2.5
+    },
+    {
+     "nombre": "Cebollín",
+     "unidad": "caja",
+     "cantidad": 1.5
+    },
+    {
+     "nombre": "Cebolla blanca",
+     "unidad": "caja",
+     "cantidad": 3.5
+    }
+   ]
+  },
+  {
+   "cliente": "pusami",
+   "fecha_offset": -12,
+   "recibido_dia": -13,
+   "recibido_hora": "21:12:00",
+   "cerrado_por": "Kevin",
+   "procesado": true,
+   "procesado_hora": "05:10:00",
+   "lineas": [
+    {
+     "nombre": "Jalapeño",
+     "unidad": "lb",
+     "cantidad": 17.5
+    },
+    {
+     "nombre": "Zanahoria",
+     "unidad": "kg",
+     "cantidad": 4.75
+    },
+    {
+     "nombre": "Ajo",
+     "unidad": "lb",
+     "cantidad": 3.5
+    },
+    {
+     "nombre": "Repollo",
+     "unidad": "pieza",
+     "cantidad": 8.0
+    },
+    {
+     "nombre": "Tomate",
+     "unidad": "caja",
+     "cantidad": 3.5
+    },
+    {
+     "nombre": "Cebolla blanca",
+     "unidad": "caja",
+     "cantidad": 5.0
+    }
+   ]
+  },
+  {
+   "cliente": "cooagu",
+   "fecha_offset": -11,
+   "recibido_dia": -12,
+   "recibido_hora": "19:20:00",
+   "cerrado_por": "Bricia",
+   "procesado": true,
+   "procesado_hora": "07:50:00",
+   "lineas": [
+    {
+     "nombre": "Ajo",
+     "unidad": "lb",
+     "cantidad": 4.5
+    },
+    {
+     "nombre": "Aguacate",
+     "unidad": "caja",
+     "cantidad": 6.0
+    },
+    {
+     "nombre": "Chile pasilla",
+     "unidad": "lb",
+     "cantidad": 2.0
+    },
+    {
+     "nombre": "Cilantro",
+     "unidad": "caja",
+     "cantidad": 3.0
+    },
+    {
+     "nombre": "Cebolla blanca",
+     "unidad": "caja",
+     "cantidad": 2.5
+    },
+    {
+     "nombre": "Tomate",
+     "unidad": "caja",
+     "cantidad": 3.0
+    },
+    {
+     "nombre": "Limón",
+     "unidad": "caja",
+     "cantidad": 3.5
+    },
+    {
+     "nombre": "Rábano",
+     "unidad": "lb",
+     "cantidad": 5.0
+    }
+   ]
+  },
+  {
+   "cliente": "talopr",
+   "fecha_offset": -11,
+   "recibido_dia": -12,
+   "recibido_hora": "19:55:00",
+   "cerrado_por": "Primo Juan",
+   "procesado": true,
+   "procesado_hora": "05:40:00",
+   "lineas": [
+    {
+     "nombre": "Jalapeño",
+     "unidad": "lb",
+     "cantidad": 12.5
+    },
+    {
+     "nombre": "Rábano",
+     "unidad": "lb",
+     "cantidad": 3.0
+    },
+    {
+     "nombre": "Aguacate",
+     "unidad": "caja",
+     "cantidad": 9.0
+    },
+    {
+     "nombre": "Limón",
+     "unidad": "caja",
+     "cantidad": 5.5
+    },
+    {
+     "nombre": "Tomate",
+     "unidad": "caja",
+     "cantidad": 7.0
+    },
+    {
+     "nombre": "Cilantro",
+     "unidad": "caja",
+     "cantidad": 3.0
+    },
+    {
+     "nombre": "Pepino",
+     "unidad": "caja",
+     "cantidad": 1.5
+    }
+   ]
+  },
+  {
+   "cliente": "armegr",
+   "fecha_offset": -10,
+   "recibido_dia": -11,
+   "recibido_hora": "22:34:00",
+   "cerrado_por": "Marco",
+   "procesado": true,
+   "procesado_hora": "06:10:00",
+   "lineas": [
+    {
+     "nombre": "Serrano",
+     "unidad": "lb",
+     "cantidad": 7.0
+    },
+    {
+     "nombre": "Cebolla blanca",
+     "unidad": "caja",
+     "cantidad": 4.0
+    },
+    {
+     "nombre": "Limón",
+     "unidad": "caja",
+     "cantidad": 4.0
+    },
+    {
+     "nombre": "Repollo",
+     "unidad": "pieza",
+     "cantidad": 4.0
+    },
+    {
+     "nombre": "Tomatillo",
+     "unidad": "lb",
+     "cantidad": 15.0
+    }
+   ]
+  },
+  {
+   "cliente": "maelgu",
+   "fecha_offset": -9,
+   "recibido_dia": -10,
+   "recibido_hora": "17:12:00",
+   "cerrado_por": "Nayeli",
+   "procesado": true,
+   "procesado_hora": "06:25:00",
+   "lineas": [
+    {
+     "nombre": "Mango",
+     "unidad": "caja",
+     "cantidad": 1.0
+    },
+    {
+     "nombre": "Tomate",
+     "unidad": "caja",
+     "cantidad": 6.0
+    },
+    {
+     "nombre": "Cebolla morada",
+     "unidad": "caja",
+     "cantidad": 3.0
+    },
+    {
+     "nombre": "Serrano",
+     "unidad": "lb",
+     "cantidad": 3.5
+    },
+    {
+     "nombre": "Aguacate",
+     "unidad": "caja",
+     "cantidad": 10.0
+    }
+   ]
+  },
+  {
+   "cliente": "talapa",
+   "fecha_offset": -9,
+   "recibido_dia": -10,
+   "recibido_hora": "18:47:00",
+   "cerrado_por": "Beto",
+   "procesado": true,
+   "procesado_hora": "05:40:00",
+   "lineas": [
+    {
+     "nombre": "Cilantro",
+     "unidad": "caja",
+     "cantidad": 2.5
+    },
+    {
+     "nombre": "Tomate",
+     "unidad": "caja",
+     "cantidad": 7.0
+    },
+    {
+     "nombre": "Tomatillo",
+     "unidad": "lb",
+     "cantidad": 15.0
+    },
+    {
+     "nombre": "Limón",
+     "unidad": "caja",
+     "cantidad": 4.0
+    },
+    {
+     "nombre": "Rábano",
+     "unidad": "lb",
+     "cantidad": 5.5
+    },
+    {
+     "nombre": "Cebolla blanca",
+     "unidad": "caja",
+     "cantidad": 4.5
+    },
+    {
+     "nombre": "Aguacate",
+     "unidad": "caja",
+     "cantidad": 7.0
+    }
+   ]
+  },
+  {
+   "cliente": "phsaki",
+   "fecha_offset": -9,
+   "recibido_dia": -10,
+   "recibido_hora": "20:20:00",
+   "cerrado_por": "Linh",
+   "procesado": true,
+   "procesado_hora": "06:40:00",
+   "lineas": [
+    {
+     "nombre": "Limón",
+     "unidad": "caja",
+     "cantidad": 5.0
+    },
+    {
+     "nombre": "Germinado de soya",
+     "unidad": "lb",
+     "cantidad": 30.0
+    },
+    {
+     "nombre": "Cebolla blanca",
+     "unidad": "caja",
+     "cantidad": 2.5
+    },
+    {
+     "nombre": "Ajo",
+     "unidad": "lb",
+     "cantidad": 4.5
+    },
+    {
+     "nombre": "Jalapeño",
+     "unidad": "lb",
+     "cantidad": 17.5
+    },
+    {
+     "nombre": "Cebollín",
+     "unidad": "caja",
+     "cantidad": 1.5
+    },
+    {
+     "nombre": "Cilantro",
+     "unidad": "caja",
+     "cantidad": 1.5
+    }
+   ]
+  },
+  {
+   "cliente": "grfoca",
+   "fecha_offset": -9,
+   "recibido_dia": -10,
+   "recibido_hora": "20:55:00",
+   "cerrado_por": "Priya",
+   "procesado": true,
+   "procesado_hora": "05:40:00",
+   "lineas": [
+    {
+     "nombre": "Aguacate",
+     "unidad": "caja",
+     "cantidad": 7.0
+    },
+    {
+     "nombre": "Lechuga romana",
+     "unidad": "caja",
+     "cantidad": 3.0
+    },
+    {
+     "nombre": "Tomate",
+     "unidad": "caja",
+     "cantidad": 6.0
+    },
+    {
+     "nombre": "Naranja",
+     "unidad": "caja",
+     "cantidad": 3.0
+    },
+    {
+     "nombre": "Limón",
+     "unidad": "caja",
+     "cantidad": 4.0
+    },
+    {
+     "nombre": "Cebolla morada",
+     "unidad": "caja",
+     "cantidad": 1.5
+    },
+    {
+     "nombre": "Calabacín",
+     "unidad": "caja",
+     "cantidad": 1.0
+    }
+   ]
+  },
+  {
+   "cliente": "talopr",
+   "fecha_offset": -8,
+   "recibido_dia": -9,
+   "recibido_hora": "19:55:00",
+   "cerrado_por": "Primo Luis",
+   "procesado": true,
+   "procesado_hora": "07:50:00",
+   "lineas": [
+    {
+     "nombre": "Limón",
+     "unidad": "caja",
+     "cantidad": 1.0
+    },
+    {
+     "nombre": "Rábano",
+     "unidad": "lb",
+     "cantidad": 5.5
+    },
+    {
+     "nombre": "Pepino",
+     "unidad": "caja",
+     "cantidad": 1.5
+    },
+    {
+     "nombre": "Tomate",
+     "unidad": "caja",
+     "cantidad": 3.5
+    },
+    {
+     "nombre": "Jalapeño",
+     "unidad": "lb",
+     "cantidad": 20.0
+    },
+    {
+     "nombre": "Aguacate",
+     "unidad": "caja",
+     "cantidad": 10.0
+    },
+    {
+     "nombre": "Cebolla blanca",
+     "unidad": "caja",
+     "cantidad": 5.0
+    },
+    {
+     "nombre": "Cilantro",
+     "unidad": "caja",
+     "cantidad": 1.0
+    }
+   ]
+  },
+  {
+   "cliente": "talopr",
+   "fecha_offset": -7,
+   "recibido_dia": -8,
+   "recibido_hora": "18:12:00",
+   "cerrado_por": "Primo Luis",
+   "procesado": true,
+   "procesado_hora": "05:50:00",
+   "lineas": [
+    {
+     "nombre": "Cebolla blanca",
+     "unidad": "caja",
+     "cantidad": 1.0
+    },
+    {
+     "nombre": "Jalapeño",
+     "unidad": "lb",
+     "cantidad": 10.0
+    },
+    {
+     "nombre": "Pepino",
+     "unidad": "caja",
+     "cantidad": 3.0
+    },
+    {
+     "nombre": "Aguacate",
+     "unidad": "caja",
+     "cantidad": 5.0
+    },
+    {
+     "nombre": "Tomate",
+     "unidad": "caja",
+     "cantidad": 2.5
+    },
+    {
+     "nombre": "Cilantro",
+     "unidad": "caja",
+     "cantidad": 2.0
+    },
+    {
+     "nombre": "Limón",
+     "unidad": "caja",
+     "cantidad": 6.0
+    },
+    {
+     "nombre": "Rábano",
+     "unidad": "lb",
+     "cantidad": 5.0
+    }
+   ]
+  },
+  {
+   "cliente": "talapa",
+   "fecha_offset": -7,
+   "recibido_dia": -8,
+   "recibido_hora": "21:20:00",
+   "cerrado_por": "Beto",
+   "procesado": true,
+   "procesado_hora": "07:10:00",
+   "lineas": [
+    {
+     "nombre": "Cilantro",
+     "unidad": "caja",
+     "cantidad": 2.5
+    },
+    {
+     "nombre": "Tomatillo",
+     "unidad": "lb",
+     "cantidad": 12.5
+    },
+    {
+     "nombre": "Aguacate",
+     "unidad": "caja",
+     "cantidad": 10.0
+    },
+    {
+     "nombre": "Jalapeño",
+     "unidad": "lb",
+     "cantidad": 5.0
+    }
+   ]
+  },
+  {
+   "cliente": "armegr",
+   "fecha_offset": -7,
+   "recibido_dia": -8,
+   "recibido_hora": "21:47:00",
+   "cerrado_por": "Lupita",
+   "procesado": true,
+   "procesado_hora": "06:25:00",
+   "lineas": [
+    {
+     "nombre": "Papa",
+     "unidad": "kg",
+     "cantidad": 25.0
+    },
+    {
+     "nombre": "Serrano",
+     "unidad": "lb",
+     "cantidad": 8.0
+    },
+    {
+     "nombre": "Aguacate",
+     "unidad": "caja",
+     "cantidad": 2.0
+    },
+    {
+     "nombre": "Cilantro",
+     "unidad": "caja",
+     "cantidad": 3.0
+    },
+    {
+     "nombre": "Rábano",
+     "unidad": "lb",
+     "cantidad": 2.0
+    },
+    {
+     "nombre": "Jalapeño",
+     "unidad": "lb",
+     "cantidad": 15.0
+    },
+    {
+     "nombre": "Cebolla blanca",
+     "unidad": "caja",
+     "cantidad": 3.0
+    },
+    {
+     "nombre": "Lechuga romana",
+     "unidad": "caja",
+     "cantidad": 2.0
+    }
+   ]
+  },
+  {
+   "cliente": "talapa",
+   "fecha_offset": -6,
+   "recibido_dia": -7,
+   "recibido_hora": "20:12:00",
+   "cerrado_por": "Rosa",
+   "procesado": true,
+   "procesado_hora": "05:25:00",
+   "lineas": [
+    {
+     "nombre": "Aguacate",
+     "unidad": "caja",
+     "cantidad": 7.0
+    },
+    {
+     "nombre": "Rábano",
+     "unidad": "lb",
+     "cantidad": 5.0
+    },
+    {
+     "nombre": "Tomate",
+     "unidad": "caja",
+     "cantidad": 2.0
+    },
+    {
+     "nombre": "Limón",
+     "unidad": "caja",
+     "cantidad": 4.5
+    },
+    {
+     "nombre": "Cebolla blanca",
+     "unidad": "caja",
+     "cantidad": 5.0
+    },
+    {
+     "nombre": "Cilantro",
+     "unidad": "caja",
+     "cantidad": 2.0
+    },
+    {
+     "nombre": "Jalapeño",
+     "unidad": "lb",
+     "cantidad": 15.0
+    }
+   ]
+  },
+  {
+   "cliente": "armegr",
+   "fecha_offset": -6,
+   "recibido_dia": -7,
+   "recibido_hora": "21:47:00",
+   "cerrado_por": "Chuy",
+   "procesado": true,
+   "procesado_hora": "05:10:00",
+   "lineas": [
+    {
+     "nombre": "Papa",
+     "unidad": "kg",
+     "cantidad": 12.5
+    },
+    {
+     "nombre": "Aguacate",
+     "unidad": "caja",
+     "cantidad": 5.0
+    },
+    {
+     "nombre": "Limón",
+     "unidad": "caja",
+     "cantidad": 1.5
+    },
+    {
+     "nombre": "Tomatillo",
+     "unidad": "lb",
+     "cantidad": 20.0
+    },
+    {
+     "nombre": "Serrano",
+     "unidad": "lb",
+     "cantidad": 2.5
+    },
+    {
+     "nombre": "Tomate",
+     "unidad": "caja",
+     "cantidad": 4.5
+    }
+   ]
+  },
+  {
+   "cliente": "phsaki",
+   "fecha_offset": -5,
+   "recibido_dia": -6,
+   "recibido_hora": "18:20:00",
+   "cerrado_por": "Tran",
+   "procesado": true,
+   "procesado_hora": "05:10:00",
+   "lineas": [
+    {
+     "nombre": "Cilantro",
+     "unidad": "caja",
+     "cantidad": 2.5
+    },
+    {
+     "nombre": "Germinado de soya",
+     "unidad": "lb",
+     "cantidad": 27.5
+    },
+    {
+     "nombre": "Cebolla blanca",
+     "unidad": "caja",
+     "cantidad": 1.5
+    },
+    {
+     "nombre": "Ajo",
+     "unidad": "lb",
+     "cantidad": 4.0
+    },
+    {
+     "nombre": "Cebollín",
+     "unidad": "caja",
+     "cantidad": 2.0
+    },
+    {
+     "nombre": "Jalapeño",
+     "unidad": "lb",
+     "cantidad": 22.5
+    }
+   ]
+  },
+  {
+   "cliente": "pusami",
+   "fecha_offset": -4,
+   "recibido_dia": -5,
+   "recibido_hora": "19:55:00",
+   "cerrado_por": "Doña Marta",
+   "procesado": true,
+   "procesado_hora": "05:10:00",
+   "lineas": [
+    {
+     "nombre": "Pimentón",
+     "unidad": "caja",
+     "cantidad": 2.0
+    },
+    {
+     "nombre": "Zanahoria",
+     "unidad": "kg",
+     "cantidad": 12.25
+    },
+    {
+     "nombre": "Cebolla blanca",
+     "unidad": "caja",
+     "cantidad": 1.0
+    },
+    {
+     "nombre": "Ajo",
+     "unidad": "lb",
+     "cantidad": 3.5
+    },
+    {
+     "nombre": "Jalapeño",
+     "unidad": "lb",
+     "cantidad": 25.0
+    },
+    {
+     "nombre": "Tomate",
+     "unidad": "caja",
+     "cantidad": 3.0
+    },
+    {
+     "nombre": "Repollo",
+     "unidad": "pieza",
+     "cantidad": 12.0
+    }
+   ]
+  },
+  {
+   "cliente": "armegr",
+   "fecha_offset": -4,
+   "recibido_dia": -5,
+   "recibido_hora": "20:12:00",
+   "cerrado_por": "Marco",
+   "procesado": true,
+   "procesado_hora": "06:50:00",
+   "lineas": [
+    {
+     "nombre": "Papa",
+     "unidad": "kg",
+     "cantidad": 10.0
+    },
+    {
+     "nombre": "Cebolla blanca",
+     "unidad": "caja",
+     "cantidad": 3.5
+    },
+    {
+     "nombre": "Repollo",
+     "unidad": "pieza",
+     "cantidad": 15.0
+    },
+    {
+     "nombre": "Serrano",
+     "unidad": "lb",
+     "cantidad": 3.0
+    }
+   ]
+  },
+  {
+   "cliente": "talapa",
+   "fecha_offset": -4,
+   "recibido_dia": -5,
+   "recibido_hora": "21:34:00",
+   "cerrado_por": "Beto",
+   "procesado": true,
+   "procesado_hora": "06:10:00",
+   "lineas": [
+    {
+     "nombre": "Tomatillo",
+     "unidad": "lb",
+     "cantidad": 7.5
+    },
+    {
+     "nombre": "Jalapeño",
+     "unidad": "lb",
+     "cantidad": 10.0
+    },
+    {
+     "nombre": "Aguacate",
+     "unidad": "caja",
+     "cantidad": 9.0
+    },
+    {
+     "nombre": "Tomate",
+     "unidad": "caja",
+     "cantidad": 3.5
+    },
+    {
+     "nombre": "Rábano",
+     "unidad": "lb",
+     "cantidad": 2.5
+    }
+   ]
+  },
+  {
+   "cliente": "talapa",
+   "fecha_offset": -3,
+   "recibido_dia": -3,
+   "recibido_hora": "08:03:00",
+   "cerrado_por": "Beto",
+   "procesado": true,
+   "procesado_hora": "10:03:00",
+   "lineas": [
+    {
+     "nombre": "Limón",
+     "unidad": "caja",
+     "cantidad": 3.5
+    },
+    {
+     "nombre": "Cilantro",
+     "unidad": "caja",
+     "cantidad": 0.5
+    },
+    {
+     "nombre": "Tomatillo",
+     "unidad": "lb",
+     "cantidad": 10.0
+    },
+    {
+     "nombre": "Repollo",
+     "unidad": "pieza",
+     "cantidad": 6.0
+    }
+   ]
+  },
+  {
+   "cliente": "pusami",
+   "fecha_offset": -2,
+   "recibido_dia": -3,
+   "recibido_hora": "19:05:00",
+   "cerrado_por": "Doña Marta",
+   "procesado": true,
+   "procesado_hora": "07:25:00",
+   "lineas": [
+    {
+     "nombre": "Zanahoria",
+     "unidad": "kg",
+     "cantidad": 6.25
+    },
+    {
+     "nombre": "Ajo",
+     "unidad": "lb",
+     "cantidad": 1.0
+    },
+    {
+     "nombre": "Repollo",
+     "unidad": "pieza",
+     "cantidad": 8.0
+    },
+    {
+     "nombre": "Cebolla blanca",
+     "unidad": "caja",
+     "cantidad": 1.0
+    }
+   ]
+  },
+  {
+   "cliente": "phsaki",
+   "fecha_offset": -2,
+   "recibido_dia": -3,
+   "recibido_hora": "21:12:00",
+   "cerrado_por": "Tran",
+   "procesado": true,
+   "procesado_hora": "05:25:00",
+   "lineas": [
+    {
+     "nombre": "Jalapeño",
+     "unidad": "lb",
+     "cantidad": 5.0
+    },
+    {
+     "nombre": "Cilantro",
+     "unidad": "caja",
+     "cantidad": 0.5
+    },
+    {
+     "nombre": "Ajo",
+     "unidad": "lb",
+     "cantidad": 4.0
+    },
+    {
+     "nombre": "Cebollín",
+     "unidad": "caja",
+     "cantidad": 2.0
+    },
+    {
+     "nombre": "Germinado de soya",
+     "unidad": "lb",
+     "cantidad": 30.0
+    },
+    {
+     "nombre": "Cebolla blanca",
+     "unidad": "caja",
+     "cantidad": 1.5
+    }
+   ]
+  },
+  {
+   "cliente": "elfaco",
+   "fecha_offset": -2,
+   "recibido_dia": -3,
+   "recibido_hora": "21:12:00",
+   "cerrado_por": "Memo",
+   "procesado": false,
+   "procesado_hora": "06:00:00",
+   "lineas": [
+    {
+     "nombre": "Tomate",
+     "unidad": "caja",
+     "cantidad": 5.0
+    },
+    {
+     "nombre": "Cebolla blanca",
+     "unidad": "caja",
+     "cantidad": 4.5
+    },
+    {
+     "nombre": "Cilantro",
+     "unidad": "caja",
+     "cantidad": 2.5
+    },
+    {
+     "nombre": "Aguacate",
+     "unidad": "caja",
+     "cantidad": 7.0
+    },
+    {
+     "nombre": "Limón",
+     "unidad": "caja",
+     "cantidad": 5.5
+    }
+   ]
+  },
+  {
+   "cliente": "armegr",
+   "fecha_offset": -1,
+   "recibido_dia": -2,
+   "recibido_hora": "20:55:00",
+   "cerrado_por": "Marco",
+   "procesado": true,
+   "procesado_hora": "07:25:00",
+   "lineas": [
+    {
+     "nombre": "Tomatillo",
+     "unidad": "lb",
+     "cantidad": 17.5
+    },
+    {
+     "nombre": "Cebolla blanca",
+     "unidad": "caja",
+     "cantidad": 2.0
+    },
+    {
+     "nombre": "Tomate",
+     "unidad": "caja",
+     "cantidad": 6.5
+    },
+    {
+     "nombre": "Jalapeño",
+     "unidad": "lb",
+     "cantidad": 25.0
+    },
+    {
+     "nombre": "Rábano",
+     "unidad": "lb",
+     "cantidad": 3.5
+    }
+   ]
+  },
+  {
+   "cliente": "talapa",
+   "fecha_offset": -1,
+   "recibido_dia": -2,
+   "recibido_hora": "21:12:00",
+   "cerrado_por": "Rosa",
+   "procesado": false,
+   "procesado_hora": "06:00:00",
+   "lineas": [
+    {
+     "nombre": "Tomate",
+     "unidad": "caja",
+     "cantidad": 5.0
+    },
+    {
+     "nombre": "Cebolla blanca",
+     "unidad": "caja",
+     "cantidad": 3.5
+    },
+    {
+     "nombre": "Cilantro",
+     "unidad": "caja",
+     "cantidad": 0.5
+    },
+    {
+     "nombre": "Aguacate",
+     "unidad": "caja",
+     "cantidad": 7.0
+    },
+    {
+     "nombre": "Limón",
+     "unidad": "caja",
+     "cantidad": 4.0
+    }
+   ]
+  },
+  {
+   "cliente": "maelgu",
+   "fecha_offset": -1,
+   "recibido_dia": -2,
+   "recibido_hora": "22:20:00",
+   "cerrado_por": "Nayeli",
+   "procesado": true,
+   "procesado_hora": "05:10:00",
+   "lineas": [
+    {
+     "nombre": "Pepino",
+     "unidad": "caja",
+     "cantidad": 3.5
+    },
+    {
+     "nombre": "Mango",
+     "unidad": "caja",
+     "cantidad": 3.0
+    },
+    {
+     "nombre": "Limón",
+     "unidad": "caja",
+     "cantidad": 3.5
+    },
+    {
+     "nombre": "Cilantro",
+     "unidad": "caja",
+     "cantidad": 2.5
+    },
+    {
+     "nombre": "Aguacate",
+     "unidad": "caja",
+     "cantidad": 7.0
+    },
+    {
+     "nombre": "Cebolla morada",
+     "unidad": "caja",
+     "cantidad": 0.5
+    },
+    {
+     "nombre": "Serrano",
+     "unidad": "lb",
+     "cantidad": 7.5
+    },
+    {
+     "nombre": "Tomate",
+     "unidad": "caja",
+     "cantidad": 7.0
+    }
+   ]
+  },
+  {
+   "cliente": "talapa",
+   "fecha_offset": 0,
+   "recibido_dia": -1,
+   "recibido_hora": "17:12:00",
+   "cerrado_por": "Beto",
+   "procesado": false,
+   "procesado_hora": "06:50:00",
+   "lineas": [
+    {
+     "nombre": "Cilantro",
+     "unidad": "caja",
+     "cantidad": 1.0
+    },
+    {
+     "nombre": "Rábano",
+     "unidad": "lb",
+     "cantidad": 5.0
+    },
+    {
+     "nombre": "Tomatillo",
+     "unidad": "lb",
+     "cantidad": 17.5
+    },
+    {
+     "nombre": "Tomate",
+     "unidad": "caja",
+     "cantidad": 7.0
+    },
+    {
+     "nombre": "Aguacate",
+     "unidad": "caja",
+     "cantidad": 2.0
+    },
+    {
+     "nombre": "Repollo",
+     "unidad": "pieza",
+     "cantidad": 11.0
+    }
+   ]
+  },
+  {
+   "cliente": "pusami",
+   "fecha_offset": 0,
+   "recibido_dia": -1,
+   "recibido_hora": "19:41:00",
+   "cerrado_por": "Kevin",
+   "procesado": false,
+   "procesado_hora": "07:50:00",
+   "lineas": [
+    {
+     "nombre": "Zanahoria",
+     "unidad": "kg",
+     "cantidad": 11.5
+    },
+    {
+     "nombre": "Tomate",
+     "unidad": "caja",
+     "cantidad": 6.0
+    },
+    {
+     "nombre": "Pimentón",
+     "unidad": "caja",
+     "cantidad": 2.0
+    },
+    {
+     "nombre": "Cebolla blanca",
+     "unidad": "caja",
+     "cantidad": 2.5
+    }
+   ]
+  },
+  {
+   "cliente": "armegr",
+   "fecha_offset": 0,
+   "recibido_dia": -1,
+   "recibido_hora": "21:47:00",
+   "cerrado_por": "Chuy",
+   "procesado": true,
+   "procesado_hora": "06:10:00",
+   "lineas": [
+    {
+     "nombre": "Jalapeño",
+     "unidad": "lb",
+     "cantidad": 12.5
+    },
+    {
+     "nombre": "Cilantro",
+     "unidad": "caja",
+     "cantidad": 3.0
+    },
+    {
+     "nombre": "Tomatillo",
+     "unidad": "lb",
+     "cantidad": 12.5
+    },
+    {
+     "nombre": "Cebolla blanca",
+     "unidad": "caja",
+     "cantidad": 2.0
+    }
+   ]
+  },
+  {
+   "cliente": "cooagu",
+   "fecha_offset": 0,
+   "recibido_dia": -1,
+   "recibido_hora": "22:20:00",
+   "cerrado_por": "Bricia",
+   "procesado": true,
+   "procesado_hora": "07:50:00",
+   "lineas": [
+    {
+     "nombre": "Cilantro",
+     "unidad": "caja",
+     "cantidad": 1.5
+    },
+    {
+     "nombre": "Rábano",
+     "unidad": "lb",
+     "cantidad": 4.5
+    },
+    {
+     "nombre": "Chile pasilla",
+     "unidad": "lb",
+     "cantidad": 1.5
+    },
+    {
+     "nombre": "Aguacate",
+     "unidad": "caja",
+     "cantidad": 3.0
+    },
+    {
+     "nombre": "Repollo",
+     "unidad": "pieza",
+     "cantidad": 13.0
+    },
+    {
+     "nombre": "Ajo",
+     "unidad": "lb",
+     "cantidad": 5.0
+    },
+    {
+     "nombre": "Limón",
+     "unidad": "caja",
+     "cantidad": 1.0
+    }
+   ]
+  },
+  {
+   "cliente": "phsaki",
+   "fecha_offset": 0,
+   "recibido_dia": 0,
+   "recibido_hora": "08:03:00",
+   "cerrado_por": "Linh",
+   "procesado": false,
+   "procesado_hora": "10:03:00",
+   "lineas": [
+    {
+     "nombre": "Cilantro",
+     "unidad": "caja",
+     "cantidad": 1.5
+    },
+    {
+     "nombre": "Germinado de soya",
+     "unidad": "lb",
+     "cantidad": 15.0
+    },
+    {
+     "nombre": "Cebollín",
+     "unidad": "caja",
+     "cantidad": 2.0
+    },
+    {
+     "nombre": "Ajo",
+     "unidad": "lb",
+     "cantidad": 2.0
+    },
+    {
+     "nombre": "Albahaca tailandesa",
+     "unidad": "lb",
+     "cantidad": 2.75
+    }
+   ],
+   "minutos_atras": 119
+  },
+  {
+   "cliente": "elfaco",
+   "fecha_offset": 0,
+   "recibido_dia": 0,
+   "recibido_hora": "08:44:00",
+   "cerrado_por": "Memo",
+   "procesado": true,
+   "procesado_hora": "10:44:00",
+   "lineas": [
+    {
+     "nombre": "Papa",
+     "unidad": "kg",
+     "cantidad": 20.0
+    },
+    {
+     "nombre": "Limón",
+     "unidad": "caja",
+     "cantidad": 2.5
+    },
+    {
+     "nombre": "Lechuga romana",
+     "unidad": "caja",
+     "cantidad": 1.0
+    },
+    {
+     "nombre": "Jalapeño",
+     "unidad": "lb",
+     "cantidad": 20.0
+    },
+    {
+     "nombre": "Tomatillo",
+     "unidad": "lb",
+     "cantidad": 15.0
+    },
+    {
+     "nombre": "Cilantro",
+     "unidad": "caja",
+     "cantidad": 2.0
+    },
+    {
+     "nombre": "Cebolla blanca",
+     "unidad": "caja",
+     "cantidad": 4.0
+    },
+    {
+     "nombre": "Aguacate",
+     "unidad": "caja",
+     "cantidad": 7.0
+    }
+   ],
+   "minutos_atras": 102
+  },
+  {
+   "cliente": "cooagu",
+   "fecha_offset": 1,
+   "recibido_dia": 0,
+   "recibido_hora": "17:34:00",
+   "cerrado_por": "Bricia",
+   "procesado": false,
+   "procesado_hora": "06:10:00",
+   "lineas": [
+    {
+     "nombre": "Ajo",
+     "unidad": "lb",
+     "cantidad": 4.0
+    },
+    {
+     "nombre": "Cebolla blanca",
+     "unidad": "caja",
+     "cantidad": 2.0
+    },
+    {
+     "nombre": "Chile pasilla",
+     "unidad": "lb",
+     "cantidad": 1.25
+    },
+    {
+     "nombre": "Rábano",
+     "unidad": "lb",
+     "cantidad": 2.0
+    },
+    {
+     "nombre": "Tomate",
+     "unidad": "caja",
+     "cantidad": 7.0
+    },
+    {
+     "nombre": "Cilantro",
+     "unidad": "caja",
+     "cantidad": 2.0
+    }
+   ],
+   "minutos_atras": 85
+  },
+  {
+   "cliente": "elfaco",
+   "fecha_offset": 1,
+   "recibido_dia": 0,
+   "recibido_hora": "17:34:00",
+   "cerrado_por": "Alicia",
+   "procesado": false,
+   "procesado_hora": "07:10:00",
+   "lineas": [
+    {
+     "nombre": "Papa",
+     "unidad": "kg",
+     "cantidad": 20.0
+    },
+    {
+     "nombre": "Aguacate",
+     "unidad": "caja",
+     "cantidad": 6.0
+    },
+    {
+     "nombre": "Tomatillo",
+     "unidad": "lb",
+     "cantidad": 10.0
+    },
+    {
+     "nombre": "Tomate",
+     "unidad": "caja",
+     "cantidad": 8.0
+    },
+    {
+     "nombre": "Cilantro",
+     "unidad": "caja",
+     "cantidad": 2.0
+    },
+    {
+     "nombre": "Cebolla blanca",
+     "unidad": "caja",
+     "cantidad": 1.5
+    },
+    {
+     "nombre": "Jalapeño",
+     "unidad": "lb",
+     "cantidad": 12.5
+    },
+    {
+     "nombre": "Limón",
+     "unidad": "caja",
+     "cantidad": 3.5
+    }
+   ],
+   "minutos_atras": 68
+  },
+  {
+   "cliente": "talapa",
+   "fecha_offset": 1,
+   "recibido_dia": 0,
+   "recibido_hora": "18:55:00",
+   "cerrado_por": "Beto",
+   "procesado": false,
+   "procesado_hora": "07:50:00",
+   "lineas": [
+    {
+     "nombre": "Cebolla blanca",
+     "unidad": "caja",
+     "cantidad": 2.0
+    },
+    {
+     "nombre": "Tomatillo",
+     "unidad": "lb",
+     "cantidad": 12.5
+    },
+    {
+     "nombre": "Rábano",
+     "unidad": "lb",
+     "cantidad": 5.0
+    },
+    {
+     "nombre": "Cilantro",
+     "unidad": "caja",
+     "cantidad": 0.5
+    }
+   ],
+   "minutos_atras": 51
+  },
+  {
+   "cliente": "armegr",
+   "fecha_offset": 2,
+   "recibido_dia": 0,
+   "recibido_hora": "19:12:00",
+   "cerrado_por": "Chuy",
+   "procesado": false,
+   "procesado_hora": "07:50:00",
+   "lineas": [
+    {
+     "nombre": "Repollo",
+     "unidad": "pieza",
+     "cantidad": 4.0
+    },
+    {
+     "nombre": "Limón",
+     "unidad": "caja",
+     "cantidad": 5.0
+    },
+    {
+     "nombre": "Aguacate",
+     "unidad": "caja",
+     "cantidad": 6.0
+    },
+    {
+     "nombre": "Serrano",
+     "unidad": "lb",
+     "cantidad": 6.0
+    },
+    {
+     "nombre": "Cilantro",
+     "unidad": "caja",
+     "cantidad": 2.0
+    },
+    {
+     "nombre": "Rábano",
+     "unidad": "lb",
+     "cantidad": 4.0
+    },
+    {
+     "nombre": "Papa",
+     "unidad": "kg",
+     "cantidad": 17.5
+    },
+    {
+     "nombre": "Tomatillo",
+     "unidad": "lb",
+     "cantidad": 17.5
+    }
+   ],
+   "minutos_atras": 34
+  },
+  {
+   "cliente": "armegr",
+   "fecha_offset": 1,
+   "recibido_dia": 0,
+   "recibido_hora": "21:47:00",
+   "cerrado_por": "Chuy",
+   "procesado": false,
+   "procesado_hora": "05:50:00",
+   "lineas": [
+    {
+     "nombre": "Lechuga romana",
+     "unidad": "caja",
+     "cantidad": 1.0
+    },
+    {
+     "nombre": "Tomatillo",
+     "unidad": "lb",
+     "cantidad": 5.0
+    },
+    {
+     "nombre": "Cilantro",
+     "unidad": "caja",
+     "cantidad": 0.5
+    },
+    {
+     "nombre": "Papa",
+     "unidad": "kg",
+     "cantidad": 12.5
+    },
+    {
+     "nombre": "Aguacate",
+     "unidad": "caja",
+     "cantidad": 8.0
+    },
+    {
+     "nombre": "Repollo",
+     "unidad": "pieza",
+     "cantidad": 5.0
+    },
+    {
+     "nombre": "Tomate",
+     "unidad": "caja",
+     "cantidad": 5.5
+    },
+    {
+     "nombre": "Limón",
+     "unidad": "caja",
+     "cantidad": 5.5
+    }
+   ],
+   "minutos_atras": 17
+  }
+ ]
+}
