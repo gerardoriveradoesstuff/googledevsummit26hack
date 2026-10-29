@@ -24,6 +24,20 @@ Dates accept `today` / `tomorrow` / `yesterday` (also `hoy` / `mañana` / `ayer`
 Tool results are plain, pre-aggregated text: client names, order numbers, dates, line items and label counts (`ceil(cantidad)`, the same rule as the Android printer).
 The server `instructions` describe the business. They also tell Gemini to confirm with the user before calling either write tool. The Gemini app also asks for manual confirmation before any write.
 
+### Scenario 1 tools: restaurant buying from distributors (mock data, mirrors the Android AppFunctions)
+
+These always use the built-in demo data in `src/purchasing.ts`, whether or not `MOCK=1` is set. Orders placed with `place_order` stay in memory until the server restarts. They mirror `android/APPFUNCTIONS.md` so Scenario 1 can also run through Gemini Developer Mode.
+
+| Tool | What it does | Hints |
+|---|---|---|
+| `get_order_history` | Araujos' past orders from its distributors, newest first, including orders placed here. Optional `product` | readOnly |
+| `check_price_change` | Compares the current distributor (Rancho Valle Meats) with the last price paid for `product` + `quantity_lbs`. Returns the % and $ change and `flagged` (a rise of 10% or more) | readOnly |
+| `compare_distributors` | Organic distributors that can deliver by `deliver_by` (default tomorrow), cheapest first. Shows totals, reviews, relationship and savings vs the current distributor, plus a recommendation | readOnly |
+| `place_order` | Places the order (`distributor_id`, `product`, `quantity_lbs`, `delivery_date?`) and returns a confirmation number. Only use it after the user confirms | write |
+| `get_current_distributor` | The default distributor and the relationship with it | readOnly |
+
+Prompts to try: "Order 20 lbs of organic chicken for Araujos" → the price is flagged (+42.9%, $210 → $300) → "compare distributors" → "go with Fresh Field" → "show my order history".
+
 ## Run it
 
 Requires Node ≥ 20.12. The Inspector UI needs Node ≥ 22.19.
