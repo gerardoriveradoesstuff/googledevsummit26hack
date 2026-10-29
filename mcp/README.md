@@ -87,6 +87,10 @@ npx @modelcontextprotocol/inspector --cli http://127.0.0.1:3333/mcp --transport 
 
 Gemini needs a **public HTTPS** URL. Pick one:
 
+**Team setup (laptop + Tailscale Funnel):** see [`../TAILSCALE.md`](../TAILSCALE.md). The MCP URL is then `https://<host>.<tailnet>.ts.net:8443/mcp`, and the API is at `https://<host>.<tailnet>.ts.net`.
+
+Any other tunnel works too:
+
 ```bash
 # Cloudflare quick tunnel (no account): prints https://<random>.trycloudflare.com
 cloudflared tunnel --url http://localhost:3333

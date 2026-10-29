@@ -10,3 +10,6 @@ android/app/build/
 android/local.properties
 android/.idea/
 *.log
+
+# local env files (PUBLIC_API_URL etc.)
+app/.env

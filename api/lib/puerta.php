@@ -4,7 +4,8 @@ declare(strict_types=1);
 require_once __DIR__ . '/db.php';
 require_once __DIR__ . '/labels.php';
 
-const PORTAL_URL = 'https://demo.ouwap.com/portal';
+// Link a la PWA del portal que se entrega a cada cliente. Configurable con la variable de entorno PORTAL_URL.
+define('PORTAL_URL', getenv('PORTAL_URL') ?: 'https://demo.ouwap.com/portal');
 
 function nuevaContrasena(): string
 {

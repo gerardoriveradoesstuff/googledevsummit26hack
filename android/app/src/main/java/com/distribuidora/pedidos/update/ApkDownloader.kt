@@ -6,10 +6,11 @@ import java.net.HttpURLConnection
 import java.net.URL
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
+import com.distribuidora.pedidos.data.ServerConfig
 import org.json.JSONObject
 
 object ApkDownloader {
-    const val DOWNLOAD_URL = "https://demo.ouwap.com/api/v1/admin/downloadApk.php"
+    val DOWNLOAD_URL: String get() = "${ServerConfig.apiBase}/v1/admin/downloadApk.php"
     const val FILE_NAME = "Distribuidora.apk"
 
     suspend fun download(pin: String, dest: File): JSONObject? = withContext(Dispatchers.IO) {

@@ -77,6 +77,8 @@ Restaurant tablet  --HTTP message (no SQL)-->  API gateway ("puerta")
 
 6. Point the restaurant tablet at this machine's LAN IP on port `8084`. In the Android emulator, use `10.0.2.2`.
 
+**Running it on a teammate's laptop for the team** (PHP API + MCP exposed with Tailscale Funnel; the Android app's server URL is set in-app): see [TAILSCALE.md](TAILSCALE.md).
+
 ## Demo data
 
 `database/seed.sql` fills the app with realistic data: 10 restaurant clients in the Bay Area and LA (Araujos Mexican Grill, Taquería La Palma, Mariscos El Güero, Pho Saigon Kitchen…) and about 55 produce orders. The orders cover the past three weeks through the next three days. Most past orders are processed. Today's orders are mixed. Future orders are new. Two past orders were **never processed** (the "missed WhatsApp" story).

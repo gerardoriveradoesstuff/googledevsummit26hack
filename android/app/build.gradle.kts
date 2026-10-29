@@ -17,6 +17,11 @@ android {
         versionCode = 13
         versionName = "1.12"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+
+        // Default API base URL; override at build time with ./gradlew assembleDebug -PapiBaseUrl=https://host.tailnet.ts.net/api
+        // (users can still change it at runtime from the in-app "Servidor" button).
+        val apiBaseUrl = providers.gradleProperty("apiBaseUrl").getOrElse("https://demo.ouwap.com/api")
+        buildConfigField("String", "API_BASE_URL", "\"${apiBaseUrl.trimEnd('/')}\"")
     }
 
     buildTypes {
@@ -32,6 +37,7 @@ android {
     }
     buildFeatures {
         compose = true
+        buildConfig = true
     }
 }
 

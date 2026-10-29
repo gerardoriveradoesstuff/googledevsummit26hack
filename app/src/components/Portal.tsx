@@ -1,7 +1,7 @@
 import { useMemo, useState } from 'react';
 import { PlusIcon } from '@heroicons/react/24/outline';
+import { API_URL as PUERTA } from '../config';
 
-const PUERTA = 'https://demo.ouwap.com/api';
 
 type Producto = { nombre: string; unidad: string };
 

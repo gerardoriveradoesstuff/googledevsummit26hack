@@ -12,4 +12,12 @@
     <string name="update_error_sources">Permite instalar apps de esta fuente en Ajustes y vuelve a pulsar actualizar.</string>
     <string name="app_function_app_description">Orderly helps restaurants reorder supplies from distributors, flags distributor price increases using order history, and compares nearby distributors before placing an order.</string>
     <string name="app_function_app_display_description">Orderly: reorder supplies, catch price hikes and compare distributors</string>
+    <string name="server_cd">Servidor (URL de la API)</string>
+    <string name="server_title">Servidor</string>
+    <string name="server_help">URL base del servidor (la app agrega /v1/…). Con Tailscale Funnel: https://laptop.tailnet.ts.net (también acepta …/api). Predeterminado: %1$s</string>
+    <string name="server_label">URL del servidor</string>
+    <string name="server_test">Probar</string>
+    <string name="server_reset">Predeterminado</string>
+    <string name="server_save">Guardar</string>
+    <string name="server_invalid">URL no válida. Usa https://host/api</string>
 </resources>
